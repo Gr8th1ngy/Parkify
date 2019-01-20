@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Car</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+    <link rel="stylesheet" href="css/smartcar.css">
+</head>
+
+<body>
+    <a onclick="logout()" class="button">Log out</a>
+    <a href="http://localhost:8000/login" class="button gray" class="gray" target="_blank">Provide access</a>
+    <a href="http://localhost:8000/vehicle" class="button gray" class="gray" target="_blank">Provide info</a>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCcq-PAKVsnCDJIiIgLE9BnqgtI8ni-hxQ",
+            authDomain: "smartcar-e646d.firebaseapp.com",
+            databaseURL: "https://smartcar-e646d.firebaseio.com",
+            projectId: "smartcar-e646d",
+            storageBucket: "smartcar-e646d.appspot.com",
+            messagingSenderId: "608080503379"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

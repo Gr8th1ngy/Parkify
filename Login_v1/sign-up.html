@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/sign-up.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email-up" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+
+        <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+
+        <div class="clearfix">
+            <a href="index.html"> <button type="button" class="cancelbtn">Cancel</button> </a>
+            <button type="submit" class="signupbtn" onclick="signup()">Sign Up</button>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCcq-PAKVsnCDJIiIgLE9BnqgtI8ni-hxQ",
+            authDomain: "smartcar-e646d.firebaseapp.com",
+            databaseURL: "https://smartcar-e646d.firebaseio.com",
+            projectId: "smartcar-e646d",
+            storageBucket: "smartcar-e646d.appspot.com",
+            messagingSenderId: "608080503379"
+        };
+        firebase.initializeApp(config);
+    </script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>
